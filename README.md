@@ -102,21 +102,64 @@ Kurulumları Vcenter Tarafından yaptım.
 ### DOCKER ve KUBERNETES
 
 1. Ubuntu 22.04 makinesine `APT repoları kullanılarak`, son sürüm `docker` ve `docker-compose`  kurun. 
+```yaml
+       docker ve docker-compose kurulum yaptım.
+```
+![docker ile ilgili önizleme görüntüsü](./dockercompose-up.png "brtarikan")
+
    1. `docker` ve `docker-compose` versiyonlarını ekrana bastırın.
+```yaml
+       docker ve docker-compose verison.
+```
+![dockerverison ile ilgili önizleme görüntüsü](./dockerversion-up.png "brtarikan")
+
    2. `busybox:1.35.0` sürümünü docker ile çekin.
+```yaml
+       busybox:1.35.0 kurulum yaptım.
+```
+![busybox ile ilgili önizleme görüntüsü](./busybox-entegre-up.png "brtarikan")
+
+
    3. Wordress + Veritabanı (MySQL/MariaDB) ayağa kaldıracak bir `docker-compose-wordpress.yaml` oluşturun.
+```yaml
+       docker-compose wordpress kurlumu yaptım.
+```
+![docker-compose ile ilgili önizleme görüntüsü](./wordpress.ymldosyası.png "brtarikan")
    4. Wordpress servisinin loglarını ekrana bastırın.
+```yaml
+       Wordpress servisi logları ekrana bastırdım.
+```
+![Wordpress servisi ile ilgili önizleme görüntüsü](./docker-wordpress-kurulum.png "brtarikan")
    5. Çekilen imajların bilgilerini ekrana bastırın.
+```yaml
+   Çekilen imajların bilgileri ekrana bastırma.
+```
+![Çekilen imajların servisi ile ilgili önizleme görüntüsü](./dockercompose-up.png "brtarikan")
+
+
    6. Veritabanı konteynırının içerisine girip, wordpress table larını listeleyin.
+
+![Çekilen imajların servisi ile ilgili önizleme görüntüsü](./dockercompose-up.png "brtarikan")
+
    7. `docker-compose-wordpress.yaml`  ile ayağa kaldırdığınız servisleri durdurun ve Wordpress + DB imajlarını sistemden silen scripti yazınız.
 
+![docker-compose-wordpress servisi ile ilgili önizleme görüntüsü](./wordpress-delete.png "brtarikan")
+![docker-compose-wordpress servisi ile ilgili önizleme görüntüsü](./docker-composer-remove-script.png "brtarikan")
 
 (?) 2. RockyLinux makinesine [`k3s Kubernetes dağıtımını`](https://k3s.io/) kurunuz.
    1. Kubernetes node un özelliklerini gösterin.
+   ![Kubernetes ile ilgili önizleme görüntüsü](./version-kuber.png "brtarikan")
+
    2. Wordpress+DB'yi kubernetes ortamına deploy(çalışır hale) edin.
+
    3. http://IP_ADRESINIZ:32222  üzerinden Wordpress e giriş yapabileyim.
+      ![Wordpress ile ilgili önizleme görüntüsü](./kubernet-kurulum-wordpress.png "brtarikan")
+
    4. Wordpress loglarını ekrana bastırın.
+         ![Wordpress ile ilgili önizleme görüntüsü](./wordpress-log-kubernet.png "brtarikan")
+
    5. Kubernetes Dashboard ı aktif edip, pod durumlarını gösterin. (?) k9s/Lens ile de gösterebilirsiniz.
+         ![Kubernetes ile ilgili önizleme görüntüsü](./kubernet-dashboard.png "brtarikan")
 
 
 Esen kalın ...
