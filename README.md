@@ -12,7 +12,7 @@
    to: Destek@beratarikan.com.tr
 ```
 
-## Adımlar
+## SANALLAŞTIRMA ve İŞLETİM SİSTEMİ 
 
 1. Sanalaştırma için 2 makina kurulumu gerçekleştirdim
 
@@ -33,28 +33,26 @@ Kurulumları Vcenter Tarafından yaptım.
 
 ![Vcenter ile ilgili önizleme görüntüsü](./Vcenter-Ubuntu.png "brtarikan")
 
-### SANALLAŞTIRMA ve İŞLETİM SİSTEMİ 
+### ADIMLAR
 
-1. `VirtualBox` sanallaştırma üzerine `Vagrant` kullanarak aşağıdaki makineleri oluşturun. (Yani vagrantfile oluşturup vagrant up dediğimizde sırayla makine oluşturacak.)
-   
-   ```bash
-   1. makine
-   Ubuntu 22.04
-   Minimum 4 GB RAM
-   Minimum 4 Core
-   (?) 150 GB Disk tanımlanması 
-   IP: 192.168.66.100
 
-   2. makine
-   RockyLinux
-   Minimum 4 GB RAM
-   Minimum 4 Core
-   (?) 100 GB Disk tanımlanması 
-   IP: 192.168.66.200
-   ```
 
    1. 2 makinede de `LinuxAdmin` kullanıcısı oluşturun ve parolasını `SysAdmin99` olarak belirleyin.
+   ```yaml
+        RockyLinux için Kullanıcı oluşturuldu.
+   ```
+
+
+
+
    2. 2 makinede de `LinuxAdmin` kullanıcısına **şifresiz olarak root** yetkisi verin. (Yani sudo komutunu çalıştırırken şifre sormasın.)
+       ```yaml
+        Root Yetkisi verildi sudo su yazınca veri bilgileri şifresiz olarak devam etmektedir. 
+        ```
+        ![LinuxRoot ile ilgili önizleme görüntüsü](./LinuxAdminRoot.png "brtarikan")
+
+
+   
    3. Aşağıdaki çıktıyı veren scripti(tarih-bas.sh) yazın ve çalıştırın.
    
    ```bash
