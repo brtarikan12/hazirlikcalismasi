@@ -63,6 +63,11 @@ Kurulumları Vcenter Tarafından yaptım.
    Tarih: 2024-01-12 (Script çalıştığı tarih)
    Saat: 22:15 (Script çalıştığı saat)
    ```
+      ```yaml
+        Ubuntu 22.04 sunucusuna script yazıldı script. ek'te sunulmuştur. 
+        ```
+![SaatScript ile ilgili önizleme görüntüsü](./SaatBilgileri.png "brtarikan")
+  
    4. **tarih-bas.sh** scrpitinin sahipliğini `root` olarak ata ve izinlerini `777` olarak değiştirin.
    5. UFW/Firewalld servisini komple durdurun. (Sunucu yeniden başladığında çalışmasın.)
    6. Sistem log dosyası içerisinde `ERROR,error,eRRor` geçen kelimleri filtrele ve `LinuxAdmin Home Dizini` içerisinde `error.logs` dosyasına yazdırın.
