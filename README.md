@@ -69,6 +69,11 @@ Kurulumları Vcenter Tarafından yaptım.
 ![SaatScript ile ilgili önizleme görüntüsü](./SaatBilgileri.png "brtarikan")
   
    4. **tarih-bas.sh** scrpitinin sahipliğini `root` olarak ata ve izinlerini `777` olarak değiştirin.
+```yaml
+        tarih ve root izinleri verildi yetkisi 777 olarak verildi
+```
+![yetki-777 ile ilgili önizleme görüntüsü](./Root-777yetki.png "brtarikan")
+
    5. UFW/Firewalld servisini komple durdurun. (Sunucu yeniden başladığında çalışmasın.)
    6. Sistem log dosyası içerisinde `ERROR,error,eRRor` geçen kelimleri filtrele ve `LinuxAdmin Home Dizini` içerisinde `error.logs` dosyasına yazdırın.
    7. Ubuntu 22.04 makinesinde IP netplan ile verilmiştir. Bu konfigürasyona `8.8.8.8` ve `8.8.4.4 DNS` kayıtlarını ekleyin.
