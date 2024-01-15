@@ -12,7 +12,6 @@
    to: Destek@beratarikan.com.tr
 ```
 
-
 ## Adımlar
 
 1. Sanalaştırma için 2 makina kurulumu gerçekleştirdim
@@ -22,9 +21,17 @@
      8 GB RAM
      6 Core
      150 GB DİSK
-     IP: 109.122.196.167    
+     IP: 109.122.196.167
+2. Makine 
+      RockyLinux
+      8 GB RAM
+      6 Core
+      100 GB DİSK
+      IP: 109.122.196.164
 
-2 makine diye belirtilmemişse işlemleri Ubuntu 22.04 üzerinde yapılacak diye düşünebilirsiniz.
+Kurulumları Vcenter Tarafından yaptım. 
+
+![Vcenter ile ilgili önizleme görüntüsü](./Vcenter-Ubuntu.png "brtarikan")
 
 ### SANALLAŞTIRMA ve İŞLETİM SİSTEMİ 
 
