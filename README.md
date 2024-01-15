@@ -75,8 +75,28 @@ Kurulumları Vcenter Tarafından yaptım.
 ![yetki-777 ile ilgili önizleme görüntüsü](./Root-777yetki.png "brtarikan")
 
    5. UFW/Firewalld servisini komple durdurun. (Sunucu yeniden başladığında çalışmasın.)
+```yaml
+        Firewall yetkileri disable olarak kaptıldı - sunucu yeniden başlarken durduruldu.
+```
+![firewall ile ilgili önizleme görüntüsü](./FirewallDisable.png "brtarikan")
+
    6. Sistem log dosyası içerisinde `ERROR,error,eRRor` geçen kelimleri filtrele ve `LinuxAdmin Home Dizini` içerisinde `error.logs` dosyasına yazdırın.
+```yaml
+       Eror logları tamamen linuxadmin home dosyasında error.logs dosyasına gönderildi.
+```
+![Error-logs ile ilgili önizleme görüntüsü](./Errorlog-linuxadmngonderme.png "brtarikan")
+![Error-logs1 ile ilgili önizleme görüntüsü](./hatalogları.png "brtarikan")
+![Error-logs2 ile ilgili önizleme görüntüsü](./hataloglarıgosterme.png "brtarikan")
+
+
+
+
+
    7. Ubuntu 22.04 makinesinde IP netplan ile verilmiştir. Bu konfigürasyona `8.8.8.8` ve `8.8.4.4 DNS` kayıtlarını ekleyin.
+```yaml
+       Dns kayıtlarını türktelekom ve google dns kayıtları ekledim.
+```
+![Dns ile ilgili önizleme görüntüsü](./dns.png "brtarikan")
 
 
 ### DOCKER ve KUBERNETES
